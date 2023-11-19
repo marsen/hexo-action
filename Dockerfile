@@ -1,6 +1,6 @@
 FROM node:20-buster-slim
 
-LABEL version="1.0.7"
+LABEL version="1.0.10"
 LABEL repository="https://github.com/marsen/hexo-action"
 LABEL homepage="https://blog.marsen.me"
 LABEL maintainer="marsen.lin <admin@marsen.me>"
