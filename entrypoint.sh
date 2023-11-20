@@ -24,10 +24,10 @@ then
 elif [ "$INPUT_COMMIT_MSG" = "" ] || [ "$INPUT_COMMIT_MSG" = "default" ]
 then
     # pull original publish repo
-    NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /sync_deploy_history.js
+    NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /usr/app/sync_deploy_history.js
     hexo g -d
 else
-    NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /sync_deploy_history.js
+    NODE_PATH=$NODE_PATH:$(pwd)/node_modules node /usr/app/sync_deploy_history.js
     hexo g -d -m "$INPUT_COMMIT_MSG"
 fi
 
