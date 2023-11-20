@@ -16,6 +16,7 @@ git config --global user.email "$INPUT_USER_EMAIL"
 npm install hexo-cli -g
 npm install hexo-deployer-git --save
 npm install hexo --save
+npm install hexo-util --save
 
 # deployment
 if [ "$INPUT_COMMIT_MSG" = "none" ]
